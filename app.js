@@ -14,6 +14,11 @@ const vizOptions = {
   height: 800,
   width: 1000,
   hideToolbar: true,
+  Category: ["Technology", "Furniture"],
+  onFirstInteractive: function () {
+    console.log("The viz is interative");
+    document.getElementById("ExportPDF").disabled = false;
+  },
 };
 
 function initViz() {
